@@ -15,11 +15,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
 public class MainActivity extends AppCompatActivity {
+
+    //TextView textView1 = (TextView)findViewById(R.id.textView);
+
+
+    //TextView textView6 = (TextView)findViewById(R.id.textView6);
 
     static ArrayList<String> notes = new ArrayList<>();
     static ArrayAdapter arrayAdapter;
@@ -36,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
         if (item.getItemId() == R.id.add_note) {
             Intent intent = new Intent(getApplicationContext(), Note.class);
+            //textView1.setText("Test 1");
             startActivity(intent);
             return true;
         }
